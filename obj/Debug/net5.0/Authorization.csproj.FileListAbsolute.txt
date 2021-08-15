@@ -1,0 +1,16 @@
+C:\Users\Mazivila\Music\C#\Authorization\bin\Debug\net5.0\Authorization.exe
+C:\Users\Mazivila\Music\C#\Authorization\bin\Debug\net5.0\Authorization.deps.json
+C:\Users\Mazivila\Music\C#\Authorization\bin\Debug\net5.0\Authorization.runtimeconfig.json
+C:\Users\Mazivila\Music\C#\Authorization\bin\Debug\net5.0\Authorization.runtimeconfig.dev.json
+C:\Users\Mazivila\Music\C#\Authorization\bin\Debug\net5.0\Authorization.dll
+C:\Users\Mazivila\Music\C#\Authorization\bin\Debug\net5.0\ref\Authorization.dll
+C:\Users\Mazivila\Music\C#\Authorization\bin\Debug\net5.0\Authorization.pdb
+C:\Users\Mazivila\Music\C#\Authorization\obj\Debug\net5.0\Authorization.csproj.AssemblyReference.cache
+C:\Users\Mazivila\Music\C#\Authorization\obj\Debug\net5.0\Authorization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mazivila\Music\C#\Authorization\obj\Debug\net5.0\Authorization.AssemblyInfoInputs.cache
+C:\Users\Mazivila\Music\C#\Authorization\obj\Debug\net5.0\Authorization.AssemblyInfo.cs
+C:\Users\Mazivila\Music\C#\Authorization\obj\Debug\net5.0\Authorization.csproj.CoreCompileInputs.cache
+C:\Users\Mazivila\Music\C#\Authorization\obj\Debug\net5.0\Authorization.dll
+C:\Users\Mazivila\Music\C#\Authorization\obj\Debug\net5.0\ref\Authorization.dll
+C:\Users\Mazivila\Music\C#\Authorization\obj\Debug\net5.0\Authorization.pdb
+C:\Users\Mazivila\Music\C#\Authorization\obj\Debug\net5.0\Authorization.genruntimeconfig.cache
