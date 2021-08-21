@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Security.Cryptography;
 using System.Text;
+using Org.BouncyCastle.Crypto.Parameters;
+using Org.BouncyCastle.Security;
 
 namespace Authorization
 {
@@ -10,21 +11,20 @@ namespace Authorization
         {
             try
             {
-                using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
-                {
-                    RSAParameters RSAKeyInfo = RSA.ExportParameters(false);
-                    byte []encodedPublicKey= Encoding.Default.GetBytes(publicKey);
-                    RSAKeyInfo.Modulus = encodedPublicKey;
-                    RSA.ImportParameters(RSAKeyInfo);
-                    byte[] encryp = RSA.Encrypt(Encoding.UTF8.GetBytes(apiKey), false);
-                    return Convert.ToBase64String(encryp);
-                }
+                var encodedPublicKey = Convert.FromBase64String(publicKey);       
+                var asymmetricKeyParameter = PublicKeyFactory.CreateKey(encodedPublicKey);
+                var rsaKeyParameters = (RsaKeyParameters) asymmetricKeyParameter;
+                var cipher = CipherUtilities.GetCipher("RSA/NONE/PKCS1Padding");
+                cipher.Init(true, rsaKeyParameters);
+                var encodedApiKey = Encoding.UTF8.GetBytes(apiKey);
+                var encryptedApikey = Convert.ToBase64String(cipher.DoFinal(encodedApiKey));
+                
+                return encryptedApikey;
             }
-            catch (CryptographicException e)
+            catch (Exception e)
             {
-                Console.WriteLine(e.Message);
-
-                return null;
+                Console.WriteLine(e);
+                throw;
             }
 
         }

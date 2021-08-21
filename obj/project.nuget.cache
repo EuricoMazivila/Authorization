@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Tauqz96PlA4lD6qUZRgcWSdgj766y3ffmYkPV4RDVWiJuTQYHCrIfh2Si8dhw4Nx4Z8FNEnECngaVnnztaAbnw==",
+  "dgSpecHash": "UwE7c16NIVEmPPbinWvu3DHoi8aVJV9loD8zejaLGpigwdcjGAEuFS6DX8C6gm/YnhkcEUFQBDCQ6UJlriZkcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mazivila\\Music\\C#\\Authorization\\Authorization.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/mazivila/Work/Paymentsds/Authorization/Authorization.csproj",
+  "expectedPackageFiles": [
+    "/home/mazivila/.nuget/packages/bouncycastle.netcore/1.8.8/bouncycastle.netcore.1.8.8.nupkg.sha512"
+  ],
   "logs": []
 }

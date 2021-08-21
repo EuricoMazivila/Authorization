@@ -9,13 +9,13 @@ namespace Authorization
             string API_Key = "";
             string Public_Key = "";
             
-            string m = RSAUtility.RSAEncrypt(API_Key, Public_Key);
+            string token = RSAUtility.RSAEncrypt(API_Key, Public_Key);
             
             Console.WriteLine("");
-            Console.WriteLine("Teste");
+            Console.WriteLine("Token");
             Console.WriteLine("");
-            Console.WriteLine(m);
-            Console.ReadKey();
+            Console.WriteLine(token);
+
         }
     }
 
